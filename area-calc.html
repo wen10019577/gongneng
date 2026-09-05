@@ -6,20 +6,20 @@
 <title>面积计算器 | CalcSmart</title>
 <meta name="description" content="免费在线面积计算器，支持矩形、圆形、三角形、平行四边形、梯形等多种图形面积计算，工程和学习好帮手。">
 <meta name="keywords" content="面积计算器,面积公式,矩形面积,圆形面积,三角形面积,平行四边形面积,梯形面积,面积计算,几何面积">
-<link rel="canonical" href="http://calc.kixtools.com/area-calc.html">
+<link rel="canonical" href="https://www.ernzi.top/area-calc.html">
 <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="shortcut icon" href="favicon.svg">
 <meta property="og:title" content="面积计算器 | CalcSmart">
 <meta property="og:description" content="免费在线面积计算器，支持矩形、圆形、三角形、平行四边形、梯形等多种图形面积计算，工程和学习好帮手。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://calc.kixtools.com/area-calc.html">
-<meta property="og:image" content="http://calc.kixtools.com/og-image.png">
+<meta property="og:url" content="https://www.ernzi.top/area-calc.html">
+<meta property="og:image" content="https://www.ernzi.top/og-image.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面积计算器 | CalcSmart">
 <meta name="twitter:description" content="免费在线面积计算器，支持矩形、圆形、三角形、平行四边形、梯形等多种图形面积计算，工程和学习好帮手。">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"面积计算器","url":"http://calc.kixtools.com/area-calc.html","description":"免费在线面积计算器，支持矩形、圆形、三角形、平行四边形、梯形等多种图形面积计算，工程和学习好帮手。"}</script>
+{"@context":"https://schema.org","@type":"WebApplication","name":"面积计算器","url":"https://www.ernzi.top/area-calc.html","description":"免费在线面积计算器，支持矩形、圆形、三角形、平行四边形、梯形等多种图形面积计算，工程和学习好帮手。"}</script>
 </head>
 <body>
 <header class="header"><div class="header-inner">
@@ -29,10 +29,6 @@
 </div></header>
 <div class="container">
 <h1>面积计算器</h1><p class="subtitle">选择图形</p><div class="card"><select id="s" onchange="show()" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:16px;margin-bottom:15px"><option value="rect">长方形</option><option value="circle">圆</option><option value="tri">三角形</option></select><div id="f"></div><button class="btn" onclick="calc()">算</button><div id="r" style="margin-top:15px;font-size:20px;color:#2563eb"></div></div><script>const S={rect:{f:[["长","l",10],["宽","w",5]],c:v=>v.l*v.w},circle:{f:[["半径","r",5]],c:v=>Math.PI*v.r*v.r},tri:{f:[["底","b",10],["高","h",6]],c:v=>v.b*v.h/2}};function show(){const s=S[document.getElementById("s").value];document.getElementById("f").innerHTML=s.f.map(([l,id,v])=>"<div class=form-group><label>"+l+"</label><input type=number id=s_"+id+" value="+v+"></div>").join("")}show();function calc(){const s=S[document.getElementById("s").value],v={};s.f.forEach(([,id])=>v[id]=+document.getElementById("s_"+id).value);document.getElementById("r").innerHTML="面积 = <b>"+s.c(v).toFixed(4)+"</b>"}</script>
-</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://kixtools.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
-<!-- Analytics -->
-<script>
-(function(){var s=location.hostname,p=location.pathname;new Image().src="https://site-analytics.gamezipper.com/hit?s="+encodeURIComponent(s)+"&p="+encodeURIComponent(p)+"&t="+Date.now();})()
-</script>
+</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
 </body>
 </html>

@@ -6,20 +6,20 @@
 <title>年龄计算器在线 — 精确计算周岁虚岁 | CalcSmart</title>
 <meta name="description" content="免费在线年龄计算器，输入出生日期精确计算周岁、虚岁、总天数和距下次生日天数，支持退休和法定年龄查询。">
 <meta name="keywords" content="年龄计算器,年龄计算,周岁计算,虚岁计算,出生日期算年龄,生日计算,总天数,退休年龄,年龄在线计算">
-<link rel="canonical" href="http://calc.kixtools.com/age.html">
+<link rel="canonical" href="https://www.ernzi.top/age.html">
 <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="shortcut icon" href="favicon.svg">
 <meta property="og:title" content="年龄计算器在线 — 精确计算周岁虚岁 | CalcSmart">
 <meta property="og:description" content="免费在线年龄计算器，输入出生日期精确计算周岁、虚岁、总天数和距下次生日天数，支持退休和法定年龄查询。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://calc.kixtools.com/age.html">
-<meta property="og:image" content="http://calc.kixtools.com/og-image.png">
+<meta property="og:url" content="https://www.ernzi.top/age.html">
+<meta property="og:image" content="https://www.ernzi.top/og-image.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="年龄计算器在线 — 精确计算周岁虚岁 | CalcSmart">
 <meta name="twitter:description" content="免费在线年龄计算器，输入出生日期精确计算周岁、虚岁、总天数和距下次生日天数，支持退休和法定年龄查询。">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"年龄计算器在线","url":"http://calc.kixtools.com/age.html","description":"免费在线年龄计算器，输入出生日期精确计算周岁、虚岁、总天数和距下次生日天数，支持退休和法定年龄查询。"}</script>
+{"@context":"https://schema.org","@type":"WebApplication","name":"年龄计算器在线","url":"https://www.ernzi.top/age.html","description":"免费在线年龄计算器，输入出生日期精确计算周岁、虚岁、总天数和距下次生日天数，支持退休和法定年龄查询。"}</script>
 </head>
 <body>
 <header class="header"><div class="header-inner">
@@ -29,10 +29,6 @@
 </div></header>
 <div class="container">
 <h1>年龄计算器</h1><p class="subtitle">输入出生日期，计算周岁、虚岁、总天数</p><div class="card"><div class="form-group"><label>出生日期</label><input type="date" id="bd"></div><button class="btn" onclick="calc()">计算</button><div id="r" style="margin-top:20px;font-size:18px"></div></div><div class="card" style="margin-top:20px"><h2>说明</h2><p>周岁：国际通用，出生为0岁。虚岁：中国传统，出生为1岁。法律以周岁为准。</p><p><strong>退休年龄</strong>：男60岁，女工人50岁。<strong>结婚年龄</strong>：男22，女20周岁。</p></div><script>function calc(){const bd=new Date(document.getElementById("bd").value);if(isNaN(bd)){alert("请选择日期");return}const now=new Date(),days=Math.floor((now-bd)/864e5);let y=now.getFullYear()-bd.getFullYear(),m=now.getMonth()-bd.getMonth(),d=now.getDate()-bd.getDate();if(d<0){m--;d+=new Date(now.getFullYear(),now.getMonth(),0).getDate()}if(m<0){y--;m+=12}const nx=new Date(now.getFullYear(),bd.getMonth(),bd.getDate());if(nx<=now)nx.setFullYear(nx.getFullYear()+1);document.getElementById("r").innerHTML="<p>🎂 周岁：<b>"+y+"岁"+m+"月"+d+"天</b></p><p>📅 虚岁：<b>"+(y+1)+"岁</b></p><p>⏱️ 已过：<b>"+days.toLocaleString()+"天</b></p><p>🎉 距下次生日：<b>"+Math.ceil((nx-now)/864e5)+"天</b></p>"}</script>
-</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://kixtools.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
-<!-- Analytics -->
-<script>
-(function(){var s=location.hostname,p=location.pathname;new Image().src="https://site-analytics.gamezipper.com/hit?s="+encodeURIComponent(s)+"&p="+encodeURIComponent(p)+"&t="+Date.now();})()
-</script>
+</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
 </body>
 </html>

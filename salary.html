@@ -6,20 +6,20 @@
 <title>税后工资计算器 — 五险一金到手 | CalcSmart</title>
 <meta name="description" content="2026最新税后工资计算器，输入税前月薪自动计算五险一金和个人所得税，精准得出到手工资，支持公积金比例自定义。">
 <meta name="keywords" content="税后工资,税后工资计算器,到手工资,五险一金,个税计算,工资计算器,实发工资,税前税后,社保公积金">
-<link rel="canonical" href="http://calc.kixtools.com/salary.html">
+<link rel="canonical" href="https://www.ernzi.top/salary.html">
 <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="shortcut icon" href="favicon.svg">
 <meta property="og:title" content="税后工资计算器 — 五险一金到手 | CalcSmart">
 <meta property="og:description" content="2026最新税后工资计算器，输入税前月薪自动计算五险一金和个人所得税，精准得出到手工资，支持公积金比例自定义。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://calc.kixtools.com/salary.html">
-<meta property="og:image" content="http://calc.kixtools.com/og-image.png">
+<meta property="og:url" content="https://www.ernzi.top/salary.html">
+<meta property="og:image" content="https://www.ernzi.top/og-image.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="税后工资计算器 — 五险一金到手 | CalcSmart">
 <meta name="twitter:description" content="2026最新税后工资计算器，输入税前月薪自动计算五险一金和个人所得税，精准得出到手工资，支持公积金比例自定义。">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"税后工资计算器","url":"http://calc.kixtools.com/salary.html","description":"2026最新税后工资计算器，输入税前月薪自动计算五险一金和个人所得税，精准得出到手工资，支持公积金比例自定义。"}</script>
+{"@context":"https://schema.org","@type":"WebApplication","name":"税后工资计算器","url":"https://www.ernzi.top/salary.html","description":"2026最新税后工资计算器，输入税前月薪自动计算五险一金和个人所得税，精准得出到手工资，支持公积金比例自定义。"}</script>
 </head>
 <body>
 <header class="header"><div class="header-inner">
@@ -29,10 +29,6 @@
 </div></header>
 <div class="container">
 <h1>税后工资计算器</h1><p class="subtitle">2026最新</p><div class="card"><div class="form-row"><div class="form-group"><label>税前月薪(元)</label><input type="number" id="g" value="15000"></div><div class="form-group"><label>公积金%</label><input type="number" id="f" value="12" min="5" max="12"></div></div><div class="form-group"><label>专项附加扣除(元/月)</label><input type="number" id="d" value="1500"></div><button class="btn" onclick="calc()">计算</button><div id="r" style="margin-top:20px;font-size:18px"></div></div><div class="card" style="margin-top:20px"><h2>说明</h2><p>五险个人：养老8%+医疗2%+失业0.5%+公积金。起征点5000元/月。</p></div><script>function calc(){const g=+document.getElementById("g").value,fr=+document.getElementById("f").value/100,d=+document.getElementById("d").value;const si=g*(0.08+0.02+0.005+fr),tx=Math.max(0,g-si-5000-d);const b=[[3000,.03,0],[12000,.1,210],[25000,.2,1410],[35000,.25,2660],[55000,.3,4410],[80000,.35,7160],[1e9,.45,15160]];let tax=0;for(const[t,r,q] of b){if(tx<=t){tax=tx*r-q;break}}tax=Math.max(0,tax);document.getElementById("r").innerHTML="<p>💼 税前：¥"+g.toLocaleString()+"</p><p>🏦 五险一金：¥"+si.toFixed(0)+"</p><p>💸 个税：¥"+tax.toFixed(2)+"</p><p>✅ 到手：<b style=color:green;font-size:24px>¥"+(g-si-tax).toFixed(2)+"</b></p>"}</script>
-</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://kixtools.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
-<!-- Analytics -->
-<script>
-(function(){var s=location.hostname,p=location.pathname;new Image().src="https://site-analytics.gamezipper.com/hit?s="+encodeURIComponent(s)+"&p="+encodeURIComponent(p)+"&t="+Date.now();})()
-</script>
+</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
 </body>
 </html>

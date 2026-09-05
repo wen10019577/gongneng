@@ -135,7 +135,7 @@ function renderHeader(active) {
 
 function renderFooter() {
   return `<div class="donate"><p data-t="donateTip">${t('donateTip')}</p><p><span data-t="donateAddr">${t('donateAddr')}</span> <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div>
-  <footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://kixtools.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer>`;
+  <footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer>`;
 }
 
 function fmt(n) { return n.toLocaleString('zh-CN', {minimumFractionDigits:2, maximumFractionDigits:2}); }
