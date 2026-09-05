@@ -10,8 +10,6 @@ const T = {
   countdown: { zh: '倒计时', en: 'Countdown' },
   calculate: { zh: '计算', en: 'Calculate' },
   reset: { zh: '重置', en: 'Reset' },
-  donateTip: { zh: '☕ 觉得好用？打赏一杯咖啡', en: '☕ Find it useful? Buy me a coffee' },
-  donateAddr: { zh: 'Tron/USDT 打赏地址:', en: 'Tron/USDT Tip:' },
   footer: { zh: '© 2026 CalcSmart · 免费在线计算器｜由KixTools提供', en: '© 2026 CalcSmart · Free Online Calculators | Powered by KixTools' },
 
   // Index
@@ -134,7 +132,7 @@ function renderHeader(active) {
 }
 
 function renderFooter() {
-  return `<div class="donate"><p data-t="donateTip">${t('donateTip')}</p><p><span data-t="donateAddr">${t('donateAddr')}</span> <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div>
+  return `
   <footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer>`;
 }
 

@@ -29,6 +29,6 @@
 </div></header>
 <div class="container">
 <h1>日期差计算器</h1><p class="subtitle">两个日期间隔天数</p><div class="card"><div class="form-row"><div class="form-group"><label>开始</label><input type="date" id="d1"></div><div class="form-group"><label>结束</label><input type="date" id="d2"></div></div><button class="btn" onclick="calc()">计算</button><div id="r" style="margin-top:20px;font-size:18px"></div></div><script>function calc(){const a=new Date(document.getElementById("d1").value),b=new Date(document.getElementById("d2").value);if(isNaN(a)||isNaN(b))return alert("请选择");const d=Math.abs(Math.floor((b-a)/864e5));document.getElementById("r").innerHTML="<p>📅 <b>"+d+"天</b> ≈ "+Math.floor(d/7)+"周"+d%7+"天 ≈ "+(d*24).toLocaleString()+"小时</p>"}</script>
-</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+</div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
 </body>
 </html>

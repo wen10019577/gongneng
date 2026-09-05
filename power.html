@@ -29,6 +29,6 @@
 </div></header>
 <div class="container">
 <h1>电费计算器</h1><p class="subtitle">按功率算电费</p><div class="card"><div class="form-row"><div class="form-group"><label>功率(W)</label><input type="number" id="w" value="2000"></div><div class="form-group"><label>每天(h)</label><input type="number" id="h" value="3" step="0.5"></div></div><div class="form-group"><label>电价(元/度)</label><input type="number" id="p" value="0.56" step="0.01"></div><button class="btn" onclick="calc()">算</button><div id="r" style="margin-top:15px;font-size:18px"></div></div><div class="card" style="margin-top:20px"><h2>常见功率</h2><p>空调1-3kW|热水器2-3kW|冰箱100-200W</p></div><script>function calc(){const w=+document.getElementById("w").value,h=+document.getElementById("h").value,p=+document.getElementById("p").value;const d=w*h/1000,m=d*30;document.getElementById("r").innerHTML="<p>⚡ 每天"+d.toFixed(2)+"度(¥"+(d*p).toFixed(2)+")</p><p>📅 每月<b>"+m.toFixed(1)+"度</b>(<b style=color:green>¥"+(m*p).toFixed(2)+"</b>)</p>"}</script>
-</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+</div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
 </body>
 </html>

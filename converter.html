@@ -29,6 +29,6 @@
 </div></header>
 <div class="container">
 <h1>进制转换器</h1><p class="subtitle">二/八/十/十六进制</p><div class="card"><div class="form-group"><label>数值</label><input type="text" id="n" value="255" oninput="conv()"></div><div class="form-group"><label>进制</label><select id="b" onchange="conv()" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ddd"><option value="10">十进制</option><option value="2">二进制</option><option value="8">八进制</option><option value="16">十六进制</option></select></div><div id="r" style="margin-top:15px;font-size:18px"></div></div><script>function conv(){try{const n=parseInt(document.getElementById("n").value,+document.getElementById("b").value);if(isNaN(n))return;document.getElementById("r").innerHTML="二进制：<b>"+n.toString(2)+"</b><br>八进制：<b>"+n.toString(8)+"</b><br>十进制：<b>"+n+"</b><br>十六进制：<b>"+n.toString(16).toUpperCase()+"</b>"}catch(e){}}conv()</script>
-</div><div class="donate"><p>☕ 觉得好用？打赏一杯咖啡</p><p>Tron/USDT: <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+</div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
 </body>
 </html>
