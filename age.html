@@ -22,6 +22,7 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"年龄计算器在线","url":"https://www.ernzi.top/age.html","description":"免费在线年龄计算器，输入出生日期精确计算周岁、虚岁、总天数和距下次生日天数，支持退休和法定年龄查询。"}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7623256017476940"
      crossorigin="anonymous"></script>
+<meta name="twitter:image" content="https://www.ernzi.top/og-image.png">
 </head>
 <body>
 <header class="header"><div class="header-inner">
@@ -32,5 +33,6 @@
 <div class="container">
 <h1>年龄计算器</h1><p class="subtitle">输入出生日期，计算周岁、虚岁、总天数</p><div class="card"><div class="form-group"><label>出生日期</label><input type="date" id="bd"></div><button class="btn" onclick="calc()">计算</button><div id="r" style="margin-top:20px;font-size:18px"></div></div><div class="card" style="margin-top:20px"><h2>说明</h2><p>周岁：国际通用，出生为0岁。虚岁：中国传统，出生为1岁。法律以周岁为准。</p><p><strong>退休年龄</strong>：男60岁，女工人50岁。<strong>结婚年龄</strong>：男22，女20周岁。</p></div><script>function calc(){const bd=new Date(document.getElementById("bd").value);if(isNaN(bd)){alert("请选择日期");return}const now=new Date(),days=Math.floor((now-bd)/864e5);let y=now.getFullYear()-bd.getFullYear(),m=now.getMonth()-bd.getMonth(),d=now.getDate()-bd.getDate();if(d<0){m--;d+=new Date(now.getFullYear(),now.getMonth(),0).getDate()}if(m<0){y--;m+=12}const nx=new Date(now.getFullYear(),bd.getMonth(),bd.getDate());if(nx<=now)nx.setFullYear(nx.getFullYear()+1);document.getElementById("r").innerHTML="<p>🎂 周岁：<b>"+y+"岁"+m+"月"+d+"天</b></p><p>📅 虚岁：<b>"+(y+1)+"岁</b></p><p>⏱️ 已过：<b>"+days.toLocaleString()+"天</b></p><p>🎉 距下次生日：<b>"+Math.ceil((nx-now)/864e5)+"天</b></p>"}</script>
 </div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+<nav aria-label="相关计算器" class="container"><h2>相关工具</h2><p><a href="/">全部计算器</a> · <a href="date-diff.html">日期差计算器</a> · <a href="countdown.html">倒计时</a></p></nav>
 </body>
 </html>

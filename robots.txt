@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: www.ernzi.top
+
+Sitemap: https://www.ernzi.top/sitemap.xml

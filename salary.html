@@ -22,6 +22,7 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"税后工资计算器","url":"https://www.ernzi.top/salary.html","description":"2026最新税后工资计算器，输入税前月薪自动计算五险一金和个人所得税，精准得出到手工资，支持公积金比例自定义。"}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7623256017476940"
      crossorigin="anonymous"></script>
+<meta name="twitter:image" content="https://www.ernzi.top/og-image.png">
 </head>
 <body>
 <header class="header"><div class="header-inner">
@@ -32,5 +33,6 @@
 <div class="container">
 <h1>税后工资计算器</h1><p class="subtitle">2026最新</p><div class="card"><div class="form-row"><div class="form-group"><label>税前月薪(元)</label><input type="number" id="g" value="15000"></div><div class="form-group"><label>公积金%</label><input type="number" id="f" value="12" min="5" max="12"></div></div><div class="form-group"><label>专项附加扣除(元/月)</label><input type="number" id="d" value="1500"></div><button class="btn" onclick="calc()">计算</button><div id="r" style="margin-top:20px;font-size:18px"></div></div><div class="card" style="margin-top:20px"><h2>说明</h2><p>五险个人：养老8%+医疗2%+失业0.5%+公积金。起征点5000元/月。</p></div><script>function calc(){const g=+document.getElementById("g").value,fr=+document.getElementById("f").value/100,d=+document.getElementById("d").value;const si=g*(0.08+0.02+0.005+fr),tx=Math.max(0,g-si-5000-d);const b=[[3000,.03,0],[12000,.1,210],[25000,.2,1410],[35000,.25,2660],[55000,.3,4410],[80000,.35,7160],[1e9,.45,15160]];let tax=0;for(const[t,r,q] of b){if(tx<=t){tax=tx*r-q;break}}tax=Math.max(0,tax);document.getElementById("r").innerHTML="<p>💼 税前：¥"+g.toLocaleString()+"</p><p>🏦 五险一金：¥"+si.toFixed(0)+"</p><p>💸 个税：¥"+tax.toFixed(2)+"</p><p>✅ 到手：<b style=color:green;font-size:24px>¥"+(g-si-tax).toFixed(2)+"</b></p>"}</script>
 </div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+<nav aria-label="相关计算器" class="container"><h2>相关工具</h2><p><a href="/">全部计算器</a> · <a href="mortgage.html">房贷计算器</a> · <a href="interest.html">利息计算器</a> · <a href="tax.html">个税计算器</a></p></nav>
 </body>
 </html>

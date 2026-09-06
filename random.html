@@ -22,6 +22,7 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"随机数生成器","url":"https://www.ernzi.top/random.html","description":"免费在线随机数生成器，支持指定范围生成随机数、批量随机、掷骰子模拟，抽奖和决策好帮手。"}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7623256017476940"
      crossorigin="anonymous"></script>
+<meta name="twitter:image" content="https://www.ernzi.top/og-image.png">
 </head>
 <body>
 <header class="header"><div class="header-inner">
@@ -32,5 +33,6 @@
 <div class="container">
 <h1>随机数生成器</h1><p class="subtitle">随机数+掷骰子</p><div class="card"><div class="form-row"><div class="form-group"><label>最小</label><input type="number" id="a" value="1"></div><div class="form-group"><label>最大</label><input type="number" id="b" value="100"></div><div class="form-group"><label>个数</label><input type="number" id="c" value="1" min="1"></div></div><button class="btn" onclick="gen()">生成</button><div id="r" style="margin-top:15px;font-size:28px;color:#2563eb;font-weight:bold"></div></div><div class="card" style="margin-top:15px"><h3>🎯 掷骰子</h3><button class="btn" onclick="document.getElementById('d').textContent=['⚀','⚁','⚂','⚃','⚄','⚅'][Math.random()*6|0]" style="font-size:20px;padding:15px 40px">🎲 掷!</button><div id="d" style="margin-top:15px;font-size:48px;text-align:center"></div></div><script>function gen(){const a=+document.getElementById("a").value,b=+document.getElementById("b").value,c=+document.getElementById("c").value;const r=[];for(let i=0;i<c;i++)r.push(Math.floor(Math.random()*(b-a+1))+a);document.getElementById("r").textContent=r.join(", ")}</script>
 </div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+<nav aria-label="相关计算器" class="container"><h2>相关工具</h2><p><a href="/">全部计算器</a> · <a href="converter.html">进制转换器</a> · <a href="percentage.html">百分比计算器</a></p></nav>
 </body>
 </html>

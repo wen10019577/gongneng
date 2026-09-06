@@ -22,6 +22,7 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"利息计算器","url":"https://www.ernzi.top/interest.html","description":"免费在线利息计算器，支持单利和复利两种计算方式，输入本金、年利率和期限即可计算存款贷款利息总额，附2026银行利率参考。"}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7623256017476940"
      crossorigin="anonymous"></script>
+<meta name="twitter:image" content="https://www.ernzi.top/og-image.png">
 </head>
 <body>
 <header class="header"><div class="header-inner">
@@ -32,5 +33,6 @@
 <div class="container">
 <h1>利息计算器</h1><p class="subtitle">单利 / 复利</p><div class="card"><div class="radio-group"><label><input type="radio" name="t" value="s" checked>单利</label><label><input type="radio" name="t" value="c">复利</label></div><div class="form-row"><div class="form-group"><label>本金(元)</label><input type="number" id="p" value="100000"></div><div class="form-group"><label>年利率(%)</label><input type="number" id="r" value="3.5" step="0.01"></div><div class="form-group"><label>年数</label><input type="number" id="n" value="3"></div></div><button class="btn" onclick="calc()">计算</button><div id="res" style="margin-top:20px;font-size:18px"></div></div><div class="card" style="margin-top:20px"><h2>2026银行利率</h2><p>活期0.2% | 1年1.45% | 3年1.95% | 5年2.0%</p></div><script>function calc(){const P=+document.getElementById("p").value,r=+document.getElementById("r").value/100,n=+document.getElementById("n").value;const s=document.querySelector("[name=t]:checked").value;let i,t;if(s==="s"){i=P*r*n;t=P+i}else{t=P*Math.pow(1+r,n);i=t-P}document.getElementById("res").innerHTML="<p>💰 本金：¥"+P.toLocaleString()+"</p><p>📈 利息：<b>¥"+i.toFixed(2)+"</b></p><p>🏦 合计：<b style=color:green;font-size:22px>¥"+t.toFixed(2)+"</b></p>"}</script>
 </div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+<nav aria-label="相关计算器" class="container"><h2>相关工具</h2><p><a href="/">全部计算器</a> · <a href="mortgage.html">房贷计算器</a> · <a href="salary.html">税后工资计算器</a> · <a href="tax.html">个税计算器</a></p></nav>
 </body>
 </html>
