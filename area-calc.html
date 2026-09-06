@@ -32,7 +32,7 @@
 </div></header>
 <div class="container">
 <h1>面积计算器</h1><p class="subtitle">选择图形</p><div class="card"><select id="s" onchange="show()" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:16px;margin-bottom:15px"><option value="rect">长方形</option><option value="circle">圆</option><option value="tri">三角形</option></select><div id="f"></div><button class="btn" onclick="calc()">算</button><div id="r" style="margin-top:15px;font-size:20px;color:#2563eb"></div></div><script>const S={rect:{f:[["长","l",10],["宽","w",5]],c:v=>v.l*v.w},circle:{f:[["半径","r",5]],c:v=>Math.PI*v.r*v.r},tri:{f:[["底","b",10],["高","h",6]],c:v=>v.b*v.h/2}};function show(){const s=S[document.getElementById("s").value];document.getElementById("f").innerHTML=s.f.map(([l,id,v])=>"<div class=form-group><label>"+l+"</label><input type=number id=s_"+id+" value="+v+"></div>").join("")}show();function calc(){const s=S[document.getElementById("s").value],v={};s.f.forEach(([,id])=>v[id]=+document.getElementById("s_"+id).value);document.getElementById("r").innerHTML="面积 = <b>"+s.c(v).toFixed(4)+"</b>"}</script>
-</div><footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer></div>
+</div><footer class="footer">© 2026 CalcSmart 智算 · Ernzi<div class="footer-links"><a href="about.html">关于与反馈</a><a href="privacy.html">隐私说明</a><a href="index.html">全部工具</a></div></footer></div>
 <nav aria-label="相关计算器" class="container"><h2>相关工具</h2><p><a href="/">全部计算器</a> · <a href="unit.html">单位换算</a> · <a href="power.html">电费计算器</a> · <a href="bmi.html">BMI计算器</a></p></nav>
 </body>
 </html>

@@ -1,5 +1,6 @@
 /* CalcSmart i18n */
 const T = {
+  homePageTitle: {zh: '生活计算工具：叠加折扣、日期差与 AA 分账｜CalcSmart 智算', en: 'Everyday Calculators: Discounts, Dates and Split Bills | CalcSmart'},
   // Global
   siteName: { zh: 'CalcSmart 智算', en: 'CalcSmart' },
   home: { zh: '首页', en: 'Home' },
@@ -13,8 +14,8 @@ const T = {
   footer: { zh: '© 2026 CalcSmart · 免费在线计算器｜由KixTools提供', en: '© 2026 CalcSmart · Free Online Calculators | Powered by KixTools' },
 
   // Index
-  indexTitle: { zh: 'CalcSmart智算 - 多功能免费在线计算器大全', en: 'CalcSmart - Free Online Calculators & Tools' },
-  indexSub: { zh: '免费一站式在线计算集合，支持房贷、个税、税后工资、利息、BMI、单位换算、面积、电费、AA分账等常用计算', en: 'Free one-stop online calculators: mortgage, tax, salary, interest, BMI, unit converter, area, power, bill split and more' },
+  indexTitle: { zh: '生活计算，先选场景再看结果', en: 'Everyday calculations, organized by task' },
+  indexSub: { zh: '从购物比价、聚餐分账到日期计划，按使用场景选择计算工具。查看计算示例、计数方式和舍入规则，让结果更容易核对。', en: 'Choose tools for shopping, shared bills, dates and conversions. Check examples and calculation rules alongside your results.' },
   mortgageDesc: { zh: '等额本息/等额本金，月供与还款明细', en: 'Monthly payment, total interest, amortization' },
   taxDesc: { zh: '2026中国个税，专项扣除，到手工资', en: 'China income tax with deductions' },
   bmiDesc: { zh: '身高体重计算BMI，健康建议', en: 'Calculate BMI with health advice' },
@@ -131,9 +132,7 @@ function renderHeader(active) {
   </div></header>`;
 }
 
-function renderFooter() {
-  return `
-  <footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://www.ernzi.top" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer>`;
+function renderFooter() { return `<footer class="footer">© 2026 CalcSmart 智算 · Ernzi · <a href="about.html">关于与反馈</a> · <a href="privacy.html">隐私说明</a></footer>`;
 }
 
 function fmt(n) { return n.toLocaleString('zh-CN', {minimumFractionDigits:2, maximumFractionDigits:2}); }
