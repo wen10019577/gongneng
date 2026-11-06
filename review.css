@@ -162,3 +162,7 @@ caption{text-align:left;font-weight:650;padding-bottom:10px}
 @media(max-width:760px){.wrap{padding:24px 16px 44px}.head-inner{padding:12px 16px;gap:10px}.nav{gap:16px}.tool-layout,.hero{grid-template-columns:1fr;gap:22px}.hero{padding:26px 20px}.panel{padding:20px}.grid{grid-template-columns:1fr 1fr}.fields{gap:14px}.brand small{display:none}.reading{margin-top:32px}h1{font-size:30px}.hero-note{padding:14px 18px}.table-scroll{max-height:360px}}
 @media(max-width:420px){.fields,.fields fieldset,.grid{grid-template-columns:1fr}.fields fieldset{padding:12px}.person{grid-template-columns:1fr}.nav{gap:12px;font-size:13px}}
 @media print{.site-head,.footer,.button,.categories{display:none}.wrap{max-width:none}.panel{border:0;box-shadow:none}.tool-layout{display:block}.table-scroll{max-height:none;overflow:visible}}
+
+/* 语言切换 */
+.nav a.lang-switch{border:1.5px solid var(--accent);border-radius:999px;padding:.18rem .7rem;font-weight:700;color:var(--accent);background:linear-gradient(180deg,#fff,#e8f1fd);box-shadow:0 2px 6px rgba(21,74,163,.18),inset 0 1px 0 #fff}
+.nav a.lang-switch:hover{background:linear-gradient(180deg,#2f83ec,#1d6fe0);color:#fff}
